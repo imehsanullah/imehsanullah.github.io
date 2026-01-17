@@ -7,6 +7,7 @@ function App() {
     'history',
     'echo $INTERESTS',
     'echo $WORK_EXPERIENCE',
+    'curl https://skills.iamehsanullah.com | jq .',
     'echo $RESUME',
     'echo $CONTACT',
   ];
@@ -39,7 +40,7 @@ function App() {
       setCommandsIdx(idx % 2 != 0 ? commandsIdx : commandsIdx + 1);
       setText(commands[commandsIdx]);
     };
-    const delay = 500 + idx * 100;
+    const delay = 300 + idx * 50;
     const timeoutId = setTimeout(revealText, delay);
 
     return () => clearTimeout(timeoutId);
@@ -47,6 +48,7 @@ function App() {
 
   return (
     <div className="App">
+      
       <div className="body">
         <div className="code-block">
           <div>
@@ -80,9 +82,7 @@ function App() {
             </div>
             {isVisible && idx >= 5 && (
               <div className="code-block">
-                <span id="f">1. Backend Development</span> <br />
-                <span id="f">2. DevOps</span> <br />
-                <span id="f">3. Machine Learning</span> <br />
+                <span id="f">["Backend Development", "DevOps", "Machine Learning"]</span>
               </div>
             )}
           </div>
@@ -170,14 +170,17 @@ function App() {
             </div>
             {isVisible && idx >= 9 && (
               <>
-                  <div className="code-block" id="w">
-                    {/* <div>================</div>
-                    <div>RÉSUMÉ</div>
-                    <div>================</div> */}
-                    <div id="z">
-                      <a href="/resume.html" target="_blank" rel="noopener noreferrer">resume.pdf</a>
-                    </div>
-                  </div>
+                <div className="code-block">
+                  <pre id="z" style={{ margin: 0 }}>
+                    {'{\n'}
+                    {'  '}<span style={{ color: '#90EE90' }}>code: </span>{'["Python", "C++", "C#", "Java", "Typescript"],\n'}
+                    {'  '}<span style={{ color: '#90EE90' }}>frameworks: </span>{'["React", "Express", "FASTAPI", "Spring Boot"],\n'}
+                    {'  '}<span style={{ color: '#90EE90' }}>infrastructure: </span>{'["AWS", "Docker", "Kubernetes", "Nginx"],\n'}
+                    {'  '}<span style={{ color: '#90EE90' }}>architecture: </span>{'["microservices", "event-driven-architecture"],\n'}
+                    {'  '}<span style={{ color: '#90EE90' }}>interests: </span>{'["genai", "reinforcement learning"]\n'}
+                    {'}'}
+                  </pre>
+                </div>
               </>
             )}
           </div>
@@ -190,6 +193,27 @@ function App() {
               <span id="cmd"> {idx === 10 ? currentText : commands[5]}</span>
             </div>
             {isVisible && idx >= 11 && (
+              <>
+                  <div className="code-block" id="w">
+                    {/* <div>================</div>
+                    <div>RÉSUMÉ</div>
+                    <div>================</div> */}
+                    <div id="z">
+                      <a href="/resume.html" target="_blank" rel="noopener noreferrer">resume.pdf</a>
+                    </div>
+                  </div>
+              </>
+            )}
+          </div>
+        )}
+        {isVisible && idx >= 12 && (
+          <div className="code-block">
+            <div>
+              <span id="a">ehsanullah@megatron</span>:<span id="b">~</span>
+              <span id="c">$</span>
+              <span id="cmd"> {idx === 12 ? currentText : commands[6]}</span>
+            </div>
+            {isVisible && idx >= 13 && (
               <>
                 <div className="code-block" id="w">
                   {/* <div>================</div>
