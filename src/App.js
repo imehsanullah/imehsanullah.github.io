@@ -229,13 +229,13 @@ function App() {
                     ]
                     [
                     <span id="link">
-                      <a href="https://github.com/imehsanullah" target="blank">
+                      <a href="https://github.com/imehsanullah" target="_blank" rel="noopener noreferrer">
                         github
                       </a>
                     </span>
                     ] [
                     <span id="link">
-                      <a href="https://www.linkedin.com/in/iamehsanullah/" target="blank">
+                      <a href="https://www.linkedin.com/in/iamehsanullah/" target="_blank" rel="noopener noreferrer">
                         linkedin
                       </a>
                     </span>
