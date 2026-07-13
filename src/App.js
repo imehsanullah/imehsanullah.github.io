@@ -148,22 +148,22 @@ function App() {
                       </a>
                     </span>
                   </div>
-                  <div id="z">
+                  {/* <div id="z">
                     [04/2023 - 06/2023] <b>Backend Engineer</b>,{' '}
                     <span id="link">
                       <a href="https://www.dubizzlelabs.com/" target="blank">
                         Dubizzle Labs
                       </a>
                     </span>
-                  </div>
-                  <div id="z">
+                  </div> */}
+                  {/* <div id="z">
                     [07/2022 - 09/2022] <b>Software Engineer Intern</b>,{' '}
                     <span id="link">
                       <a href="https://www.confiz.com/" target="blank">
                         Confiz
                       </a>
                     </span>
-                  </div>
+                  </div> */}
                 </div>
               </>
             )}
