@@ -82,7 +82,7 @@ function App() {
             </div>
             {isVisible && idx >= 5 && (
               <div className="code-block">
-                <span id="f">["Backend Development", "DevOps", "Machine Learning"]</span>
+                <span id="f">["Backend Development", "Infra", "Machine Learning", "Robotics"]</span>
               </div>
             )}
           </div>
@@ -141,6 +141,14 @@ function App() {
                     </span>
                   </div>
                   <div id="z">
+                    [08/2021 - 06/2023] <b>Software Engineer</b>,{' '}
+                    <span id="link">
+                      <a href="https://www.upwork.com/" target="blank">
+                        Upwork
+                      </a>
+                    </span>
+                  </div>
+                  <div id="z">
                     [04/2023 - 06/2023] <b>Backend Engineer</b>,{' '}
                     <span id="link">
                       <a href="https://www.dubizzlelabs.com/" target="blank">
@@ -173,9 +181,9 @@ function App() {
                 <div className="code-block">
                   <pre id="z" style={{ margin: 0 }}>
                     {'{\n'}
-                    {'  '}<span style={{ color: '#90EE90' }}>code: </span>{'["Python", "C++", "C#", "Java", "Typescript"],\n'}
+                    {'  '}<span style={{ color: '#90EE90' }}>code: </span>{'["Python", "C++", "Java", "Typescript", "Go"],\n'}
                     {'  '}<span style={{ color: '#90EE90' }}>frameworks: </span>{'["React", "Express", "FASTAPI", "Spring Boot"],\n'}
-                    {'  '}<span style={{ color: '#90EE90' }}>infrastructure: </span>{'["AWS", "Docker", "Kubernetes", "Nginx"],\n'}
+                    {'  '}<span style={{ color: '#90EE90' }}>infrastructure: </span>{'["AWS", "Docker", "Kubernetes"],\n'}
                     {'  '}<span style={{ color: '#90EE90' }}>architecture: </span>{'["microservices", "event-driven-architecture"],\n'}
                     {'  '}<span style={{ color: '#90EE90' }}>interests: </span>{'["genai", "reinforcement learning"]\n'}
                     {'}'}

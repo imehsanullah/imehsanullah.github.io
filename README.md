@@ -11,9 +11,9 @@
 
 ```javascript
 const about = {
-  code: [Python, C++, C#, Java, Typescript],
+  code: [Python, C++, Java, Typescript, Go],
   frameworks: [React, Express, FASTAPI, Spring Boot],
-  infrastructure: [AWS, Docker, Kubernetes, Nginx],
+  infrastructure: [AWS, Docker, Kubernetes],
   architecture: ["microservices", "event-driven-architecture"],
   interests: ["genai", "reinforcement learning"]
 }
