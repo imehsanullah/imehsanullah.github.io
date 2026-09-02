@@ -8,7 +8,7 @@ function App() {
     'echo $INTERESTS',
     'echo $WORK_EXPERIENCE',
     'curl https://skills.iamehsanullah.com | jq .',
-    'echo $RESUME',
+    // 'echo $RESUME',
     'echo $CONTACT',
   ];
   const [currentText, setCurrentText] = useState('');
@@ -193,7 +193,7 @@ function App() {
             )}
           </div>
         )}
-        {isVisible && idx >= 10 && (
+        {false && isVisible && idx >= 10 && (
           <div className="code-block">
             <div>
               <span id="a">ehsanullah@megatron</span>:<span id="b">~</span>
@@ -214,14 +214,14 @@ function App() {
             )}
           </div>
         )}
-        {isVisible && idx >= 12 && (
+        {isVisible && idx >= 10 && (
           <div className="code-block">
             <div>
               <span id="a">ehsanullah@megatron</span>:<span id="b">~</span>
               <span id="c">$</span>
-              <span id="cmd"> {idx === 12 ? currentText : commands[6]}</span>
+              <span id="cmd"> {idx === 10 ? currentText : commands[5]}</span>
             </div>
-            {isVisible && idx >= 13 && (
+            {isVisible && idx >= 11 && (
               <>
                 <div className="code-block" id="w">
                   {/* <div>================</div>
